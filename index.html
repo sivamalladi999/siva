@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Audio and Video </title>
+  </head>
+  <body>
+<div>
+    <video id="vid" source src="video/videoplayback.mp4" type="video/mp4" autoplay controls="controls">
+  </video>
+</div>
+<div>
+  <audio id="aud" src="audio/Kalimba.mp3" type="audio/mp3" autoplay controls="controls">
+
+  </audio>
+</div>
+  <br>
+  <button type="button" name="button" onclick="vpause()">Video Pause</button>
+  <button type="button" name="button"onclick="vplay()">Video Play</button><br>
+  <button type="button" name="button" onclick="apause()">Audio Pause</button>
+  <button type="button" name="button" onclick="aplay()">Audio Play</button>
+
+  </body>
+  <script type="text/javascript">
+  function vpause(){
+       var video=document.getElementById("vid");
+    video.pause();
+  }
+  function vplay(){
+    var video=document.getElementById("vid");
+    video.play();
+  }
+
+  function apause(){
+       var audio=document.getElementById("aud");
+    audio.pause();
+  }
+  function aplay(){
+    var audio=document.getElementById("aud");
+    audio.play();
+  }
+  </script>
+</html>
